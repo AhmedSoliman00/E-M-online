@@ -87,7 +87,7 @@ body {
   cursor: pointer;
   transition: 0.3s;
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   text-decoration: none;
 }
 .links-container div:hover {
