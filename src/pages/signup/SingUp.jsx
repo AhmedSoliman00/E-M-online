@@ -23,11 +23,11 @@ const SingUp = () => {
   ] = StudentSignUp();
   return (
     <div
-      className=" mt-[70px] mb-10 grid justify-center bg-[#00204a] p-3  md:flex justify-between items-center "
+      className=" mt-[70px] mb-10 flex justify-center  p-3  items-center "
       style={{ direction: "ltr", minHeight: "90vh" }}
     >
       <div
-        className="md:w-[70%] bg-white p-3 mt-[50px]"
+        className="w-[70%] bg-white border shadow p-3 mt-[50px]"
         style={{ borderRadius: "20px" }}
       >
         <div>
@@ -151,9 +151,7 @@ const SingUp = () => {
           </div>
         </div>
       </div>
-      <div>
-        <img src="Untitled-1.png" className="h-[400px]" />
-      </div>
+
       <ScrollToTop />
     </div>
   );

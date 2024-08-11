@@ -11,24 +11,6 @@ import WhatsButton from "./components/whatsButton/WhatsButton.jsx";
 import SidebarWithHeader from "./components/navbar/Navbar.jsx";
 
 const Root = () => {
-  useEffect(() => {
-    const overlay = document.getElementById("overlay");
-
-    const onVisibilityChange = () => {
-      if (document.visibilityState === "hidden") {
-        overlay.style.display = "block";
-      } else {
-        overlay.style.display = "none";
-      }
-    };
-
-    document.addEventListener("visibilitychange", onVisibilityChange);
-
-    return () => {
-      document.removeEventListener("visibilitychange", onVisibilityChange);
-    };
-  }, []);
-
   return (
     <React.StrictMode>
       <div id="overlay" className="overlay"></div>

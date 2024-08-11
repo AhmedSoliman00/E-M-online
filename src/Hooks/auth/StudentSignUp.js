@@ -83,7 +83,10 @@ const StudentSignUp = () => {
       // هنا يمكنك إضافة المنطق الخاص بعملية تسجيل الدخول
 
       localStorage.setItem("token", response.data.token);
-      localStorage.setItem("user", JSON.stringify(response.data.Data));
+      localStorage.setItem(
+        "user",
+        JSON.stringify(response.data.Data || response.data.data)
+      );
 
       // يمكنك إظهار رسالة نجاح باستخدام toast
       toast.success("تم  انشاء الحساب بنجاح  بنجاح");

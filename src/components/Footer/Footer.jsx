@@ -6,14 +6,15 @@ const Footer = () => {
       <div>
         <div className="w-[90%] m-auto text-center md:w-[100%]">
           <h1 className="font-bold text-white md:text-xl">
-            استمتع بدروس الثانوية العامة واحصل على دعم تعليمى مميز
+            التفكير الفلسفي والتحليل النفسي هما مفتاحا الفهم العميق للعالم
+            والذات
           </h1>
         </div>
         <div className="flex justify-center  my-3">
-          <a href="https://www.facebook.com/profile.php?id=61556280021487&mibextid=kFxxJD">
+          <a href="https://www.facebook.com/profile.php?id=100003679834470&mibextid=ZbWKwL">
             <FaFacebookSquare className="text-4xl text-white mx-2" />
           </a>
-          <a href="#">
+          <a href="https://www.youtube.com/@Dr.MohamedAliphilosopher">
             <FaYoutube className="text-4xl text-red-500 mx-2" />
           </a>
         </div>

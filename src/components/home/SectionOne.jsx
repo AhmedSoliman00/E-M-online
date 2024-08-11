@@ -3,13 +3,13 @@ import { useState } from "react";
 import { Zoom } from "react-awesome-reveal";
 import { Link } from "react-router-dom";
 import UserType from "../../Hooks/auth/userType";
-import img from "../../img/00a63fa2-ddd3-4c8c-91c8-1eb74156bb2f-removebg-preview.png";
+
 const SectionOne = () => {
   const [userData, isAdmin, isTeacher, student] = UserType();
   const [displayedName, setDisplayedName] = useState("");
   const [nameIndex, setNameIndex] = useState(0);
-  const name = "    الدكتور  / محمد على فى المواد الفلسفية  ";
-  const description = "استمتع بدروس الثانوية العامة واحصل على دعم تعليمى مميز";
+  const name = "      د/محمد على  لشرح المواد الفلسفية للثانوية العامة  ";
+  const description = "استمتع بدروس الثانوية العامة  على دعم تعليمى ";
   useEffect(() => {
     if (nameIndex < name.length) {
       const timer = setTimeout(() => {
@@ -28,7 +28,7 @@ const SectionOne = () => {
             <div>
               <Zoom>
                 <img
-                  src={img}
+                  src="شعار أزرق حبل إطار أزياء.png"
                   className="m-auto mt-8 h-[300px] w-[300px] md:h-[400px] w-[400px] hover-effect"
                 />
               </Zoom>
@@ -53,7 +53,7 @@ const SectionOne = () => {
                 <div></div>
               ) : (
                 <div>
-                  <Link to="/login">
+                  <Link to="/student_login">
                     <img src="log in (1).png" className="h-[80px] w-[200px]" />
                   </Link>
                   <Link to="/singup">

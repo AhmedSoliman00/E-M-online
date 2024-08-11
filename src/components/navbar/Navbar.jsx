@@ -13,7 +13,7 @@ import {
   Center,
   Spinner,
 } from "@chakra-ui/react";
-import logo from "../../img/e-m megmg.png";
+import logo from "../../img/شعار الدكتور.png";
 import { FaMoon, FaSun } from "react-icons/fa"; // استخدمت react-icons بدلاً من @chakra-ui/icons
 import { Link } from "react-router-dom";
 import { CiLogin } from "react-icons/ci";
@@ -189,7 +189,7 @@ export default function Nav() {
                 </Menu>
               ) : (
                 <div className="flex">
-                  <Link to="/login">
+                  <Link to="/student_login">
                     <Button
                       className="m-1 w-[120px] md:w-[150px]"
                       colorScheme="teal"

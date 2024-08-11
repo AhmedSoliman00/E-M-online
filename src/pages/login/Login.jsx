@@ -18,7 +18,7 @@ const Login = () => {
   return (
     <div
       style={{ minHeight: "90vh" }}
-      className=" flex justify-center items-center mt-[70px] bg-[#00204a]"
+      className=" flex justify-center items-center mt-[70px] "
     >
       <div
         className="login w-[90%]  shadow border bg-white p-5 md:w-[60%]"

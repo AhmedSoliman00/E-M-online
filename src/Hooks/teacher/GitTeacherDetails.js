@@ -10,7 +10,7 @@ const GitTeacherDetails = () => {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const response = await baseUrl.get(`api/month/teacher/2`, {
+        const response = await baseUrl.get(`api/month/teacher/25`, {
           headers: { token: token },
         });
         setTeacher(response.data);
